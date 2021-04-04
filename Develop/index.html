@@ -9,7 +9,9 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <link rel="stylesheet" href="style.css" />
   <title>Work Day Scheduler</title>
 </head>
@@ -22,130 +24,96 @@
   </header>
 
   <!-- ENTER TIME-BLOCKS -->
-  <div class="container">
-    <!-- 9 AM -->
-    <div class="row">
-      <div class=" form-group col-sm hour">
-        9a
-      </div>
-      <div class="col-10 form-group">
-        <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-      </div>
-      <div class="col-1 form-group">
-        <button class="saveBtn">save</button>
-      </div>
+  <div class="container time-block">
+  <!-- 9 AM -->
+    <div class= "row">
+      <div class="col-1 hour">9a</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
 
-    <!-- 10a -->
-    <div class="row">
-      <div class=" form-group col-sm hour">
-        10a
-      </div>
-      <div class="col-10 form-group">
-        <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-      </div>
-      <div class="col-1 form-group">
-        <button class="saveBtn">save</button>
-      </div>
+  <!-- 10a -->
+    <div class= "row">
+      <div class="col-1 hour">10a</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
   
   <!-- 11a -->
-  <div class="row">
-    <div class=" form-group col-sm hour">
-      11a
+    <div class= "row">
+      <div class="col-1 hour">11a</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
-    <div class="col-10 form-group">
-      <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-    </div>
-    <div class="col-1 form-group">
-      <button class="saveBtn">save</button>
-    </div>
-  </div>
   
   <!-- 12p -->
-  <div class="row">
-    <div class=" form-group col-sm hour">
-      12p
+    <div class= "row">
+      <div class="col-1 hour">12p</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
-    <div class="col-10 form-group">
-      <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-    </div>
-    <div class="col-1 form-group">
-      <button class="saveBtn">save</button>
-    </div>
-  </div>
+  
   
   <!-- 1p -->
-  <div class="row">
-    <div class=" form-group col-sm hour">
-      1p
+    <div class= "row">
+      <div class="col-1 hour">1p</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
-    <div class="col-10 form-group">
-      <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-    </div>
-    <div class="col-1 form-group">
-      <button class="saveBtn">save</button>
-    </div>
-  </div>
   
   <!-- 2p -->
-  <div class="row">
-    <div class=" form-group col-sm hour">
-      2p
+    <div class= "row">
+      <div class="col-1 hour">2p</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
-    <div class="col-10 form-group">
-      <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-    </div>
-    <div class="col-1 form-group">
-      <button class="saveBtn">save</button>
-    </div>
-  </div>
-  
+    
   <!-- 3p -->
-  <div class="row">
-    <div class=" form-group col-sm hour">
-      3p
+    <div class= "row">
+      <div class="col-1 hour">3p</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
-    <div class="col-10 form-group">
-      <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-    </div>
-    <div class="col-1 form-group">
-      <button class="saveBtn">save</button>
-    </div>
-  </div>
   
   <!-- 4p -->
-  <div class="row">
-    <div class=" form-group col-sm hour">
-      4p
+    <div class= "row">
+      <div class="col-1 hour">4p</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
-    <div class="col-10 form-group">
-      <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-    </div>
-    <div class="col-1 form-group">
-      <button class="saveBtn">save</button>
-    </div>
-  </div>
   
   <!-- 5p -->
-  <div class="row">
-    <div class=" form-group col-sm hour">
-      5p
-    </div>
-    <div class="col-10 form-group">
-      <textarea type="text" class="form-control" id="inputTask" rows="2"></textarea>
-    </div>
-    <div class="col-1 form-group">
-      <button class="saveBtn">save</button>
+    <div class= "row">
+      <div class="col-1 hour">5p</div>
+      <div class="col task"></div>
+      <button class="col-1 saveBtn d-flex justify-content-center align-items-center">
+        <span class="iconify" data-icon="zmdi-floppy" data-inline="false"></span>
+      </button>
     </div>
   
   </div>
   
-  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-  <script>
-    dayjs().format()
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
 </body>
 
 </html>
