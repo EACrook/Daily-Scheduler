@@ -1,15 +1,7 @@
-var timeBlocks = document.querySelector("#time-block")
-
-// Clone the time-block entries
-function createTimeBlockEl() {
-$(timeBlocks).clone(true);
-}
-// Get date to display on page
-
-// Get notes sections on the page
-
-// Allow for clicked section to be edited 
-
+var taskDescriptionEl = document.querySelector("description")
+ 
 // Allow for save button to save the text
 
-createTimeBlockEl();
+// Get date to display on page
+
+// Save to local server
