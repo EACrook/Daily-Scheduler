@@ -90,6 +90,7 @@ function loadTasks() {
     return currentTasks;
 }
 
+
 function createTask(time, text) {
     $(`#time-${time}`).val(text)
 }
